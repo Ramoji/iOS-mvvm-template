@@ -11,6 +11,11 @@
 		93CE7C511FA53D2F007BA5C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CE7C501FA53D2F007BA5C0 /* Assets.xcassets */; };
 		93CE7C541FA53D2F007BA5C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CE7C521FA53D2F007BA5C0 /* LaunchScreen.storyboard */; };
 		93CE7C5F1FA53D30007BA5C0 /* MVVM_TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE7C5E1FA53D30007BA5C0 /* MVVM_TemplateTests.swift */; };
+		93CE7C6C1FA54121007BA5C0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE7C6B1FA54121007BA5C0 /* Constants.swift */; };
+		93CE7C771FA54233007BA5C0 /* AppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE7C761FA54233007BA5C0 /* AppServices.swift */; };
+		93CE7C791FA54258007BA5C0 /* UtilityServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE7C781FA54258007BA5C0 /* UtilityServices.swift */; };
+		93CE7C7B1FA542B5007BA5C0 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE7C7A1FA542B5007BA5C0 /* RootViewModel.swift */; };
+		93CE7C7D1FA54326007BA5C0 /* Foo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CE7C7C1FA54326007BA5C0 /* Foo.swift */; };
 		BAF79E2E36140A7052286262 /* Pods_MVVM_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9E8CD165768AE50063978E /* Pods_MVVM_Template.framework */; };
 		C5108E90DC60F4767FBAD81A /* Pods_MVVM_TemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC73327A669B74D6EF23E5C /* Pods_MVVM_TemplateTests.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +42,11 @@
 		93CE7C5A1FA53D30007BA5C0 /* MVVM-TemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-TemplateTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93CE7C5E1FA53D30007BA5C0 /* MVVM_TemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_TemplateTests.swift; sourceTree = "<group>"; };
 		93CE7C601FA53D30007BA5C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93CE7C6B1FA54121007BA5C0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		93CE7C761FA54233007BA5C0 /* AppServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServices.swift; sourceTree = "<group>"; };
+		93CE7C781FA54258007BA5C0 /* UtilityServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilityServices.swift; sourceTree = "<group>"; };
+		93CE7C7A1FA542B5007BA5C0 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		93CE7C7C1FA54326007BA5C0 /* Foo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foo.swift; sourceTree = "<group>"; };
 		9C9E8CD165768AE50063978E /* Pods_MVVM_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2F82FB0EC80680D725A660 /* Pods-MVVM-TemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-TemplateTests.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MVVM-TemplateTests/Pods-MVVM-TemplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF54F73ACE52D0D7766F7E38 /* Pods-MVVM-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Template.release.xcconfig"; path = "../Pods/Target Support Files/Pods-MVVM-Template/Pods-MVVM-Template.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +116,11 @@
 			isa = PBXGroup;
 			children = (
 				93CE7C491FA53D2F007BA5C0 /* AppDelegate.swift */,
+				93CE7C6B1FA54121007BA5C0 /* Constants.swift */,
+				93CE7C711FA541C5007BA5C0 /* Views */,
+				93CE7C6D1FA54157007BA5C0 /* Models */,
+				93CE7C701FA541B7007BA5C0 /* View Models */,
+				93CE7C6E1FA54160007BA5C0 /* Services */,
 				93CE7C691FA53EB8007BA5C0 /* Resources */,
 				93CE7C6A1FA53EBD007BA5C0 /* Supporting Files */,
 			);
@@ -136,6 +151,78 @@
 				93CE7C551FA53D2F007BA5C0 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93CE7C6D1FA54157007BA5C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93CE7C7C1FA54326007BA5C0 /* Foo.swift */,
+				93CE7C7E1FA54337007BA5C0 /* Serialization */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93CE7C6E1FA54160007BA5C0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				93CE7C761FA54233007BA5C0 /* AppServices.swift */,
+				93CE7C781FA54258007BA5C0 /* UtilityServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		93CE7C701FA541B7007BA5C0 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				93CE7C7A1FA542B5007BA5C0 /* RootViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		93CE7C711FA541C5007BA5C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93CE7C731FA54204007BA5C0 /* Factories */,
+				93CE7C721FA541FA007BA5C0 /* Storyboards */,
+				93CE7C751FA54212007BA5C0 /* Controllers */,
+				93CE7C741FA5420D007BA5C0 /* Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93CE7C721FA541FA007BA5C0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		93CE7C731FA54204007BA5C0 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		93CE7C741FA5420D007BA5C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93CE7C751FA54212007BA5C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93CE7C7E1FA54337007BA5C0 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Serialization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,12 +384,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-MVVM-Template/Pods-MVVM-Template-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS10.0/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa-iOS10.0/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift-iOS10.0/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-iOS10.0/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit-iOS10.0/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-iOS10.0/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -343,12 +430,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/../Pods/Target Support Files/Pods-MVVM-TemplateTests/Pods-MVVM-TemplateTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS10/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa-iOS10/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift-iOS10/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result-iOS10/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit-iOS10/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-iOS10/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
@@ -375,7 +462,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CE7C7B1FA542B5007BA5C0 /* RootViewModel.swift in Sources */,
+				93CE7C791FA54258007BA5C0 /* UtilityServices.swift in Sources */,
+				93CE7C771FA54233007BA5C0 /* AppServices.swift in Sources */,
 				93CE7C4A1FA53D2F007BA5C0 /* AppDelegate.swift in Sources */,
+				93CE7C7D1FA54326007BA5C0 /* Foo.swift in Sources */,
+				93CE7C6C1FA54121007BA5C0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +615,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CB9D46LH37;
-				INFOPLIST_FILE = "MVVM-Template/Info.plist";
+				INFOPLIST_FILE = "MVVM-Template/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "brianbolze.MVVM-Template";
@@ -540,7 +632,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CB9D46LH37;
-				INFOPLIST_FILE = "MVVM-Template/Info.plist";
+				INFOPLIST_FILE = "MVVM-Template/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "brianbolze.MVVM-Template";
